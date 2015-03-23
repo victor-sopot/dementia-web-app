@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Dementia Helper</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- ICONS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="font/typicons.min.css">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/text-input.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/glide.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row font-access">
+      <div class="twelve columns">
+          <span class="accent-text">Font: </span>
+          <button class="menu-trigger">1x</button>
+          <button>2x</button>
+          <button>4x</button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="twelve columns">
+        <h1>Dementia<small>Services</small></h1>
+        <a href="" class="button button-primary menu-trigger"><i class="typcn typcn-th-list"></i> Main Menu</a>
+      </div>
+    </div>
+
+    <div class="search row">
+      <div class="twelve columns">
+        <input type="search" placeholder="Search..." />
+        <button class="button-primary"><span class="typcn typcn-zoom-outline"></span> </button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="twelve columns">
+        <h2>Yoko</h2>
+        <span class="input input--minoru">
+          <input class="input__field input__field--yoko" type="text" id="input-16" />
+          <label class="input__label input__label--yoko" for="input-16">
+            <span class="input__label-content input__label-content--yoko">Street</span>
+          </label>
+        </span>
+        <span class="input input--minoru">
+          <input class="input__field input__field--yoko" type="text" id="input-17" />
+          <label class="input__label input__label--yoko" for="input-17">
+            <span class="input__label-content input__label-content--yoko">City</span>
+          </label>
+        </span>
+        <span class="input input--minoru">
+          <input class="input__field input__field--yoko" type="text" id="input-18" />
+          <label class="input__label input__label--yoko" for="input-18">
+            <span class="input__label-content input__label-content--yoko">Region</span>
+          </label>
+        </span>
+      </div>
+    </div>
+
+    <nav id="menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="services.html"> Services</a></li>
+        <li><a href=""> Contact</a></li>
+        <li><a href=""> FAQ</a></li>
+      </ul>
+    </nav>
+  </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="js/inits.js"></script>
+  <script src="js/classie.js"></script>
+  <script>
+      (function() {
+        // trim polyfill : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
+        if (!String.prototype.trim) {
+          (function() {
+            // Make sure we trim BOM and NBSP
+            var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
+            String.prototype.trim = function() {
+              return this.replace(rtrim, '');
+            };
+          })();
+        }
+        [].slice.call( document.querySelectorAll( 'input.input__field' ) ).forEach( function( inputEl ) {
+          // in case the input is already filled..
+          if( inputEl.value.trim() !== '' ) {
+            classie.add( inputEl.parentNode, 'input--filled' );
+          }
+          // events:
+          inputEl.addEventListener( 'focus', onInputFocus );
+          inputEl.addEventListener( 'blur', onInputBlur );
+        } );
+        function onInputFocus( ev ) {
+          classie.add( ev.target.parentNode, 'input--filled' );
+        }
+        function onInputBlur( ev ) {
+          if( ev.target.value.trim() === '' ) {
+            classie.remove( ev.target.parentNode, 'input--filled' );
+          }
+        }
+      })();
+    </script>
+</body>
+</html>
