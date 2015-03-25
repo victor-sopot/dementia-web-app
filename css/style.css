@@ -114,6 +114,8 @@ h1 small i {
 
 #jPanelMenu-menu li {
 	text-align: center;
+	margin: 10px auto;
+	width: 90%;
 }
 
 #jPanelMenu-menu a:focus {
@@ -125,7 +127,7 @@ h1 small i {
 	margin: 1.5rem 3rem;
 }
 
-#jPanelMenu-menu li > ul > li > a {
+#jPanelMenu-menu li > ul > li > a { /* nested list items */
 	color: #EDE9E3;
 	padding: 10px;
 	margin-bottom: 20px;
@@ -133,8 +135,8 @@ h1 small i {
 	border: 2px solid #259D8F;
 }
 
-#jPanelMenu-menu > ul > li > a {
-	border-bottom: 1px solid #484848;
+#jPanelMenu-menu > ul > li > a { /* list items */
+	border: 2px solid #259D8F;
 	display: block; 
 	padding: 10px;
 	font-size: 2rem;
