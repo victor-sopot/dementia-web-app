@@ -41,7 +41,7 @@
     <div class="row font-access">
       <div class="twelve columns">
           <span class="accent-text">Font: </span>
-          <button class="menu-trigger">1x</button>
+          <button>1x</button>
           <button>2x</button>
           <button>4x</button>
       </div>
@@ -49,8 +49,7 @@
 
     <div class="row">
       <div class="twelve columns">
-        <h1>Dementia<small>Services</small></h1>
-        <a href="" class="button button-primary menu-trigger"><i class="typcn typcn-th-list"></i> Main Menu</a>
+        <h1 class="pageHeader">Dementia<small>Services</small></h1>
       </div>
     </div>
 
@@ -72,47 +71,35 @@
       </div>
     </div>
 
-    <div class="row">
-      <div class="twelve columns">
-
-        <h3><i class="typcn typcn-support"></i>Helplines</h3>
-        <table id="helplines">
-          <thead>
-            <tr>
-              <th>Title</th>
-              <th>Number</th>
-              <th>Availability</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Dementia1</td>
-              <td>123123123</td>
-              <td>24 hours, all week</td>
-            </tr>
-            <tr>
-              <td>Dementia2</td>
-              <td>999888777</td>
-              <td>24 hours, unavailable on week-ends</td>
-            </tr>
-            <tr>
-              <td>Dementia3</td>
-              <td>000000000</td>
-              <td>24 hours, unavailable on public holidays</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-
     <nav id="menu">
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="services.html"> Services</a></li>
-        <li><a href=""> Contact</a></li>
+        <li><a href="index.html"><img src="images/logo.png" alt=""></a></li>
+        <li><input type="search" placeholder="Search..." /></li>
+        <li><a href="index.html">Home</a></li>
+        <li>
+          <a href="services.html"> Services</a>
+          <ul>
+            <li><a href="#info">Information Prescriptions</a></li>
+            <li><a href="#homev">Home Visits</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="contact.html"> Contact</a>
+          <ul>
+            <li><a href="contact.html#helplines">Helplines</a></li>
+            <li><a href="contact.html#email">E-mail Us</a></li>
+            <li><a href="contact.html#localsupport">Local Support</a></li>
+          </ul>
+        </li>
         <li><a href=""> FAQ</a></li>
       </ul>
     </nav>
+
+    <div class="row">
+      <div class="twelve columns">
+        <a href="" class="button button-primary menu-trigger"><i class="typcn typcn-th-list"></i> Main Menu</a>
+      </div>
+    </div>
   </div>
 
 <!-- End Document

@@ -165,7 +165,7 @@ $(document).ready(function(){
 			setjPanelMenuStyles: function() {
 				var bg = 'background:#fff',
 					htmlBG = $('html').css('background-color'),
-					bodyBG = $('body').css('background-color');
+					bodyBG = $('body').css('background');
 
 				var backgroundGenerator = function(element){
 					var bgs = [];

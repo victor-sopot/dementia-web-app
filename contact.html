@@ -24,7 +24,6 @@
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/text-input.css">
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/glide.css">
   <link rel="stylesheet" href="css/style.css">
@@ -42,7 +41,7 @@
     <div class="row font-access">
       <div class="twelve columns">
           <span class="accent-text">Font: </span>
-          <button class="menu-trigger">1x</button>
+          <button>1x</button>
           <button>2x</button>
           <button>4x</button>
       </div>
@@ -50,21 +49,50 @@
 
     <div class="row">
       <div class="twelve columns">
-        <h1>Dementia<small>Services</small></h1>
-        <a href="" class="button button-primary menu-trigger"><i class="typcn typcn-th-list"></i> Main Menu</a>
-      </div>
-    </div>
-
-    <div class="search row">
-      <div class="twelve columns">
-        <input type="search" placeholder="Search..." />
-        <button class="button-primary"><span class="typcn typcn-zoom-outline"></span> </button>
+        <h1 class="pageHeader">Dementia<small>Contact</small></h1>
+        <a href="#" class="button button-primary menu-trigger"><i class="typcn typcn-th-list"></i> Main Menu</a>
       </div>
     </div>
 
     <div class="row">
       <div class="twelve columns">
-        <h2>Yoko</h2>
+
+        <h3>Help-lines</h3>
+        <p>Emergency telephone numbers for your records</p>
+        <table id="helplines">
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Number</th>
+              <th>Availability</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Dementia1</td>
+              <td><a href="tel:123123123">123123123</a></td>
+              <td>24 hours, all week</td>
+            </tr>
+            <tr>
+              <td>Dementia2</td>
+              <td><a href="tel:999888777">999888777</a></td>
+              <td>24 hours, unavailable on week-ends</td>
+            </tr>
+            <tr>
+              <td>Dementia3</td>
+              <td><a href="000000000">000000000</a></td>
+              <td>24 hours, unavailable on public holidays</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="twelve columns">
+
+        <h3>Contact Us</h3>
+        <p>We answer to emails as soon as possible</p>
         <span class="input input--minoru">
           <input class="input__field input__field--yoko" type="text" id="input-16" />
           <label class="input__label input__label--yoko" for="input-16">
@@ -88,18 +116,40 @@
 
     <nav id="menu">
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="services.html"> Services</a></li>
-        <li><a href=""> Contact</a></li>
+        <li><a href="index.html"><img src="images/logo.png" alt=""></a></li>
+        <li><input type="search" placeholder="Search..." /></li>
+        <li><a href="index.html">Home</a></li>
+        <li>
+          <a href="services.html"> Services</a>
+          <ul>
+            <li><a href="services.html#info">Information Prescriptions</a></li>
+            <li><a href="services.html#homev">Home Visits</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="contact.html"> Contact</a>
+          <ul>
+            <li><a href="#helplines">Helplines</a></li>
+            <li><a href="#email">E-mail Us</a></li>
+            <li><a href="#localsupport">Local Support</a></li>
+          </ul>
+        </li>
         <li><a href=""> FAQ</a></li>
       </ul>
     </nav>
+
+    <div class="row">
+      <div class="twelve columns">
+        <a href="" class="button button-primary menu-trigger"><i class="typcn typcn-th-list"></i> Main Menu</a>
+      </div>
+    </div>
   </div>
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
   <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="js/jquery.glide.min.js"></script>
   <script src="js/inits.js"></script>
   <script src="js/classie.js"></script>
   <script>
