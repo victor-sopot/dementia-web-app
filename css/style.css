@@ -42,6 +42,10 @@ button .typcn {
 	margin-top: 30px;
 }
 
+#fontsize {
+	margin-top: 0;
+}
+
 .menu-trigger {
 	width: 100%;
 }
@@ -50,7 +54,6 @@ button .typcn {
 	font-size: 70%;
 	color: white;
 	background-color: #19628F;
-
 }
 
 .font-access button {
@@ -85,6 +88,13 @@ h1 small {
 
 h1 small i {
 	font-size: 5rem;
+}
+
+h2,h3,h4,h5,h6 {
+	color: #5F3F1F;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px white;
+	background-color: rgba(95, 63, 31, 0.1);
 }
 
 #helplines {
