@@ -33,48 +33,6 @@ a {
 	text-decoration: none;
 }
 
-button .typcn {
-	font-size: 26px;
-}
-
-.column, .columns {
-	text-align: center;
-	margin-top: 30px;
-}
-
-#fontsize {
-	margin-top: 0;
-}
-
-.menu-trigger {
-	width: 100%;
-}
-
-.font-access {
-	font-size: 70%;
-	color: white;
-	background-color: #19628F;
-}
-
-.font-access button {
-	color: white;
-	padding: 0 5px;
-	height: 30px;
-}
-
-input[type="search"]{
-	vertical-align: top;
-	width: 70%;
-}
-
-.searchbtn {
-	padding: 0 10px;
-}
-
-.slider img {
-	max-width:100%;
-}
-
 h1 {
 	color: #E78829;
 	font-size: 4.5rem;
@@ -95,6 +53,32 @@ h2,h3,h4,h5,h6 {
 	font-weight: bold;
 	text-shadow: 1px 1px 1px white;
 	background-color: rgba(95, 63, 31, 0.1);
+}
+
+button .typcn {
+	font-size: 26px;
+}
+
+.column, .columns {
+	text-align: center;
+	margin-top: 30px;
+}
+
+#fontsize {
+	margin-top: 0;
+}
+
+.menu-trigger {
+	width: 100%;
+}
+
+.searchbtn {
+	padding: 0 10px;
+}
+
+/* JS Slider */
+.slider img {
+	max-width:100%;
 }
 
 #helplines {
@@ -174,9 +158,10 @@ h2,h3,h4,h5,h6 {
 
 
 
-/* INPUT FIELDS */
+/* INPUT FIELDS STYLES */
 
 input[type="search"] {
+	width: 70%;
 	height: 38px;
 	padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
 	background-color: #fff;
@@ -246,18 +231,6 @@ input[type="search"]:focus {
 	display: block;
 	padding: 1.6em 0;
 	width: 100%;
-}
-
-.graphic {
-	position: absolute;
-	top: 0;
-	left: 0;
-	fill: none;
-}
-
-.icon {
-	color: #ddd;
-	font-size: 150%;
 }
 
 /* Yoko */
