@@ -6,7 +6,6 @@ body {
 	background: -o-linear-gradient(top, rgba(217,255,252,1) 0%, rgba(160,207,219,1) 100%);
 	background: -ms-linear-gradient(top, rgba(217,255,252,1) 0%, rgba(160,207,219,1) 100%);
 	background: linear-gradient(to bottom, rgba(217,255,252,1) 0%, rgba(160,207,219,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9fffc', endColorstr='#a0cfdb', GradientType=0 );
 }
 
 
@@ -144,7 +143,6 @@ button .typcn {
 	background: -o-linear-gradient(top,  rgba(255,255,255,0.2) 0%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
 	background: -ms-linear-gradient(top,  rgba(255,255,255,0.2) 0%,rgba(255,255,255,0) 100%); /* IE10+ */
 	background: linear-gradient(to bottom,  rgba(255,255,255,0.2) 0%,rgba(255,255,255,0) 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
 }
 
 #jPanelMenu-menu img {
@@ -176,7 +174,7 @@ input[type="search"] {
 
 input[type="search"]:focus {
   	border: 1px solid #33C3F0;
-  	outline: 0;
+  	outline: none;
 }
 
 .input {
