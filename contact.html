@@ -51,7 +51,7 @@
     <div class="row">
       <div class="twelve columns">
         <h1 class="pageHeader">Dementia<small>Contact</small></h1>
-        <a href="#" class="button button-primary menu-trigger"><i class="typcn typcn-th-list"></i> Main Menu</a>
+        <span id="search"><input type="search" placeholder="Search for services or information" /><a class="searchbtn button button-primary" href="">Search</a></span>
       </div>
     </div>
 
@@ -97,28 +97,34 @@
         <span class="input input--minoru">
           <input class="input__field input__field--yoko" type="text" id="input-16" />
           <label class="input__label input__label--yoko" for="input-16">
-            <span class="input__label-content input__label-content--yoko">Street</span>
+            <span class="input__label-content input__label-content--yoko">Your Name</span>
           </label>
         </span>
         <span class="input input--minoru">
           <input class="input__field input__field--yoko" type="text" id="input-17" />
           <label class="input__label input__label--yoko" for="input-17">
-            <span class="input__label-content input__label-content--yoko">City</span>
+            <span class="input__label-content input__label-content--yoko">Your Email</span>
           </label>
         </span>
         <span class="input input--minoru">
           <input class="input__field input__field--yoko" type="text" id="input-18" />
           <label class="input__label input__label--yoko" for="input-18">
-            <span class="input__label-content input__label-content--yoko">Region</span>
+            <span class="input__label-content input__label-content--yoko">Subject</span>
           </label>
         </span>
+        <span class="input">
+          <textarea id="input-19" cols="50" rows="10"></textarea>
+          <label for="input-19" class="input__label input__label--yoko">
+            <span>Subject</span>
+          </label>
+        </span>
+        <span><input type="submit"></span>
       </div>
     </div>
 
     <nav id="menu">
       <ul>
         <a href="index.html"><img src="images/logo.png" alt=""></a>
-        <li><input type="search" placeholder="Search..." /></li>
         <li><a href="index.html">Home</a></li>
         <li>
           <a href="services.html"> Services</a>
@@ -132,7 +138,6 @@
           <ul>
             <li><a href="#helplines">Helplines</a></li>
             <li><a href="#email">E-mail Us</a></li>
-            <li><a href="#localsupport">Local Support</a></li>
           </ul>
         </li>
         <li><a href=""> FAQ</a></li>
